@@ -1,0 +1,21 @@
+import wollok.game.*
+
+import validaciones.*
+
+program Validaciones {
+	game.title("Validaciones")
+	game.height(10)
+	game.width(10)
+
+	// add assets in asset folder, for example, for the background
+  // game.boardGround("fondo2.jpg")
+
+	//
+	game.addVisual(clock)
+	game.addVisual(model)
+
+	game.onTick(1000, "clock", {clock.tick()})
+	game.onTick(1000, "action", {model.action()})
+
+	game.start()
+}
