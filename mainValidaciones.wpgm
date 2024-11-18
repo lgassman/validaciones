@@ -12,10 +12,14 @@ program Validaciones {
 
 	//
 	game.addVisual(clock)
-	game.addVisual(model)
+	const onTickModel = new Model(name="onTick", position=game.at(2,1))
+	const scheduleModel = new Model(name="schedule ", position=game.at(2,2))
+	game.addVisual(onTickModel)
+	game.addVisual(scheduleModel)
 
 	game.onTick(1000, "clock", {clock.tick()})
-	game.onTick(1000, "action", {model.action()})
+	game.onTick(1000, "action", {onTickModel.action()})
+	game.schedule(1000, {scheduleModel.action()})
 
 	game.start()
 }

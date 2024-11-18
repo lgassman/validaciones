@@ -1,7 +1,7 @@
 object clock {
   var value = 0
 
-  method position() = game.at(0,0)
+  method position() = game.at(2,0)
 
   method value() = value
 
@@ -10,16 +10,16 @@ object clock {
   }
 
   method text() {
-    return "clock" + value.toString()
+    return "clock: " + value.toString()
   }
 
 }
 
-object model {
+class Model {
   
   var counter = 0
-  
-  method position() =  game.at(0,1)
+  const name  
+  const property position
 
   method action() {
     counter = counter + 1
@@ -27,7 +27,7 @@ object model {
   }
 
   method text() {
-    return "action counter: " + counter
+    return "action counter of " + name + ": " + counter
   }
 
 }
