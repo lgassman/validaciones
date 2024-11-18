@@ -18,3 +18,4 @@ ejecutado en el schedule debería quedar en 1.  Sin embargo, se ve como los mode
 error incrementan su valor a una velocidad muy superior al clock, exponiendo así la falla.
 
 
+[validaciones](https://github.com/lgassman/validaciones/blob/main/validaciones.gif?raw=true)
