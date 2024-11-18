@@ -7,10 +7,6 @@ program Validaciones {
 	game.height(10)
 	game.width(10)
 
-	// add assets in asset folder, for example, for the background
-  // game.boardGround("fondo2.jpg")
-
-	//
 	game.addVisual(clock)
 	const onTickModel = new Model(name="onTick", position=game.at(2,1))
 	const scheduleModel = new Model(name="schedule ", position=game.at(2,2))
